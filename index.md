@@ -5,7 +5,7 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-title: "Milo的ex-Hippocampus"
+title: "醉江月的博客"
 header:
     image_fullwidth: front02.jpg
 ---
