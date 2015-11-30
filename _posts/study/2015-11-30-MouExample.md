@@ -1,8 +1,8 @@
 ---
 layout: page
-title: MarkDown语法
+title: Mou
 categories:
-    - technical
+    - study
 image:
     title: header_rapidjson_stack.jpg
     thumb: header_rapidjson_stack_thumb.jpg

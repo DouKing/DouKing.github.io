@@ -2,20 +2,12 @@
   url: "/"
   side: left
 
-- title: "RapidJSON"
-  url: "/rapidjson/"
-  side: left
-
-- title: "计算机图形学"
-  url: "/graphics/"
-  side: left
-
-- title: "杂文"
-  url: "/misc/"
-  side: left
-
 - title: "技术总结"
   url: "/technical/"
+  side: left
+
+- title: "收藏学习"
+  url: "/study/"
   side: left
 
 - title: "简历"
