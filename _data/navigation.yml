@@ -6,8 +6,12 @@
   url: "/technical/"
   side: left
 
-- title: "收藏学习"
+- title: "收藏|学习"
   url: "/study/"
+  side: left
+
+- title: "随笔"
+  url: "/essay/"
   side: left
 
 - title: "简历"
