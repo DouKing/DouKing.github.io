@@ -1,5 +1,5 @@
 - name: Weibo
-  url: http://weibo.com/Pretty_kai-_-
+  url: http://weibo.com/u/3058827243
   class: icon-weibo
 
 - name: GitHub
@@ -7,5 +7,5 @@
   class: icon-github
 
 - name: E-Mail
-  url: wyk8916@gmail.com
+  url: mailto:wyk8916@gmail.com
   class: icon-mail
