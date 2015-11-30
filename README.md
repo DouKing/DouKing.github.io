@@ -1,3 +1,3 @@
-# Milo的ex-Hippocampus
+# 这是我的技术博客模板
 
-http://miloyip.com/
+[http://DouKing.github.io](http://DouKing.github.io)
