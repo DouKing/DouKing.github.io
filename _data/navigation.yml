@@ -14,6 +14,14 @@
   url: "/misc/"
   side: left
 
+- title: "技术总结"
+  url: "/technical/"
+  side: left
+
 - title: "简历"
   url: "/cv/"
+  side: right
+
+- title: "关于我"
+  url: "/aboutme/"
   side: right
