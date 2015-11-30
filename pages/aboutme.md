@@ -1,8 +1,8 @@
 ---
 layout: page
 show_meta: false
-title: "关于我"
-subheadline: "自我介绍"
+title: ""
+subheadline: ""
 permalink: "/aboutme/"
 ---
 
