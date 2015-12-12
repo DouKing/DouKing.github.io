@@ -3,3 +3,7 @@
 - name: "寺库"
   url: "http://www.secoo.com"
   title: "寺库"
+
+- name: "简书"
+  url: "http://www.jianshu.com/users/2fd9d9c61a0e/latest_articles"
+  title: "简书"
