@@ -6,10 +6,10 @@ subheadline: "关于我"
 permalink: "/aboutme/"
 ---
 
-### 职业
+### 码农
 
 iOS开发工程师
 
-### 就职
+### loser
 
-北京寺库商贸有限公司
+没错，我是个loser。。。
