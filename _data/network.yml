@@ -7,3 +7,7 @@
 - name: "简书"
   url: "http://www.jianshu.com/users/2fd9d9c61a0e/latest_articles"
   title: "简书"
+
+- name: "casatwy"
+  url: "http://casatwy.com"
+  title: "casatwy"
