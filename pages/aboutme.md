@@ -10,6 +10,3 @@ permalink: "/aboutme/"
 
 iOS开发工程师
 
-### loser
-
-没错，我是个loser。。。
