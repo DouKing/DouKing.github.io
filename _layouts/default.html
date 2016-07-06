@@ -1,16 +1,26 @@
----
-layout: compress
----
-{% include head.html %}
-<body id="top-of-page" class="{{ page.format }}">
-	{% include navigation.html %}
+<!DOCTYPE html>
+<html>
 
-	{% include masthead.html %}
+  {% include head.html %}
 
-	{{ content }}
+  <body>
 
-	{% include footer.html %}
-	
-	{% include footer_scripts.html %}
-</body>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+    
+    {% include side-panel.html %}
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            {{ content }}
+            {% include footer.html %}
+        </div>
+    </div>
+    
+    {% include external.html %}
+    
+  </body>
+
 </html>
