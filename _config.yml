@@ -13,7 +13,7 @@ permalink: /:year/:month/:title/
 highlighter: pygments
 markdown: redcarpet
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "tables"]
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
 cover_color: slate
@@ -34,7 +34,7 @@ paginate_path: "page/:num/"
 
 # Comment
 comment:
-    disqus: douking
+    disqus: DouKing
     # duoshuo:
 # Social
 social:
@@ -45,6 +45,5 @@ social:
     mail: wyk1016@126.com
 
 # Google Analytics
-ga:
+# ga:
 #     id: UA-25719337-1
-#     host: onevcat.com
