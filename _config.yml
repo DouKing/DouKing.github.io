@@ -2,7 +2,7 @@
 title: 醉江月
 subtitle: 自强不息，厚德载物
 welcome_message: 欢迎来到我的博客
-description: 来自中国的iOS开发者，努力学习中。。。
+description: 来自中国的iOS开发者，现居北京。努力工作，努力学习中。
 # creator: <a href="http://onev.cat">@onevcat</a>
 
 url: "http://douking.github.io"
@@ -24,7 +24,7 @@ blog_button:
 
 nav:
     - {title: 项目, description: 我的项目, url: 'https://github.com/DouKing'}
-    - {title: 寺库, description: 寺库, url: 'http://www.secoo.com/'}
+    - {title: 简书, description: 我的简书, url: 'http://www.jianshu.com/users/2fd9d9c61a0e/latest_articles'}
     # - {title: 订阅, description: 邮件订阅本站, url: '//store.objccn.io/subscribe'}
 
 # Pagination
