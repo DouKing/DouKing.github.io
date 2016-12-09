@@ -15,7 +15,7 @@ tags: study
 
 切换到项目根目录，运行下面的命令
 
-> pod spec creat [Sample]
+> pod spec create [Sample]
 
 这时会在项目根目录生成`Sample.podspec`文件
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "wuyikai" => "wuyikai@secoo.com" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/DouKing/Sample.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/DouKing/Sample.git", :tag => "#{s.version}" }
   s.source_files = "Sample/**/*.{h,m}"
   s.requires_arc = true
 
@@ -44,7 +44,7 @@ end
 > pod lib lint
 
 如果不想要警告：
-> pod lib lint --allow-warning
+> pod lib lint --allow-warnings
 
 如果想让错误信息更丰富：
 > pod lib lint --verbose
@@ -69,3 +69,14 @@ end
 
 - `trunk`命令需要注册，参考[Cocoapods官方网站](https://guides.cocoapods.org/making/getting-setup-with-trunk.html)
 - 在打tag时要注意包含podspec文件里的version
+
+### Cocoapods私有仓库相关命令
+
+1.Cocoapods仓库列表
+> pod repo list
+
+2.将git地址添加到Cocoapods仓库
+> pod repo add specs [url]
+
+3.将podspec文件上传到Cocoapods仓库
+> pod repo push [仓库名] [xxx.podspec] --allow-warnings --use-libraries [--sources=https://xxxxxxxx]
