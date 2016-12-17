@@ -1,49 +1,115 @@
-# Basic
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: http://douking.github.io
+date_format: "ordinal"
 title: 醉江月
-subtitle: 自强不息，厚德载物
-welcome_message: 欢迎来到我的博客
-description: 来自中国的iOS开发者，现居北京。努力工作，努力学习中。
-# creator: <a href="http://onev.cat">@onevcat</a>
+subtitle: "努力学习，努力工作中"
+description: "义开的个人博客"
+keywords: 醉江月, 义开, wyk, douking
+favicon: /favicon.ico
+timezone: Asia/Beijing
+encoding: "utf-8"
+side_bar_repo_limit: 5
 
-url: "http://douking.github.io"
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: douking
+organization: Secoo, Inc.
+organization_url: http://www.secoo.com
+location: Beijing, China
+email: wyk8916@gmail.com
 
-permalink: /:year/:month/:title/
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
 
-# Format
+  -
+    href: /categories/
+    label: 分类
+
+  -
+    href: /wiki/
+    label: 维基
+
+  -
+    href: /links/
+    label: 链接
+
+  -
+    href: /about/
+    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
 highlighter: rouge
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "tables"]
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
 
-# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: slate
+repository: douking
 
-blog_button:
-    title: 博客
-    description: 访问博客
+# ---------------- #
+#      Socials     #
+# ---------------- #
+github_username: douking
+# douban_username: douking
+# facebook_username: douking
+# weibo_username: douking
+# zhihu_username: douking
+# twitter_username: douking
 
-nav:
-    - {title: 项目, description: 我的项目, url: 'https://github.com/DouKing'}
-    - {title: 简书, description: 我的简书, url: 'http://www.jianshu.com/users/2fd9d9c61a0e/latest_articles'}
-    # - {title: 订阅, description: 邮件订阅本站, url: '//store.objccn.io/subscribe'}
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, duoshuo
+comments_provider: disqus
+# !!!重要!!! 请修改下面两个用户名为你自己申请的
+# !!!Important!!! Please modify usernames below to yours
+# duoshuo_username: douking
+disqus_username: Douking
+# 在使用 disqus 的时候可点击显示多说评论框
+lazy_load_duoshuo: true
 
-# Pagination
-gems: [jekyll-paginate]
-paginate: 10
-paginate_path: "page/:num/"
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+google:
+    analytics_id: UA-80669434-1
 
-# Comment
-comment:
-    disqus: DouKing
-    # duoshuo:
-# Social
-social:
-    weibo: Pretty_kai-_-
-    github: douking
-    # twitter: onevcat
-    # gplus: 107108267983477358170
-    mail: wyk1016@126.com
-
-# Google Analytics
-# ga:
-#     id: UA-25719337-1
+# ---------------- #
+#      Datas       #
+# ---------------- #
+skill_software_keywords: [Objective-C, Swift]
+skill_mobile_app_keywords: [iOS]
+# skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
