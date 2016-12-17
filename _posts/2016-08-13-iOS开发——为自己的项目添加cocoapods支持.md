@@ -1,11 +1,11 @@
 ---
-
 layout: post
-title: iOS开发——为自己的项目添加cocoapods支持
-date: 2016-08-13 21:00:00.000000000 +09:00
-tags: study
-
+title: iOS开发——为自己的项目添加`cocoapods`支持
+description: iOS开发——为自己的项目添加`cocoapods`支持
+categories: study
+keywords: git, cocoapods, podspec
 ---
+
 
 #### 1.创建项目
 
@@ -41,22 +41,27 @@ end
 这里需要注意`s.version`要和`s.source`里面`tag`的版本号要一致，不然后面验证会不通过
 
 验证podspec文件，运行下面的命令
+
 > pod lib lint
 
 如果不想要警告：
+
 > pod lib lint --allow-warnings
 
 如果想让错误信息更丰富：
+
 > pod lib lint --verbose
 
 #### 3.打tag上传
 
 验证通过后，为项目打上tag，并推到远端
+
 > git tag xxx
 
 > git push --tags
 
 使用`trunk`命令，把podspec文件推送到CocoaPod官方库
+
 > pod trunk push [Sample.podspec]
 
 #### 4.使用
@@ -73,10 +78,13 @@ end
 ### Cocoapods私有仓库相关命令
 
 1.Cocoapods仓库列表
+
 > pod repo list
 
 2.将git地址添加到Cocoapods仓库
+
 > pod repo add specs [url]
 
 3.将podspec文件上传到Cocoapods仓库
+
 > pod repo push [仓库名] [xxx.podspec] --allow-warnings --use-libraries [--sources=https://xxxxxxxx]
