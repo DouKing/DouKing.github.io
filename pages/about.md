@@ -14,7 +14,7 @@ permalink: /about/
 
 ## 联系
 
-* GitHub：[@Douking](https://github.com/douking)
+* GitHub：[https://github.com/douking]()
 * 博客：[{{ site.title }}]({{ site.url }})
 
 ## Skill Keywords
