@@ -93,14 +93,19 @@ github_username: DouKing
 # ---------------- #
 #      Comments    #
 # ---------------- #
-# support provider: disqus, duoshuo
-comments_provider: disqus
+# support provider: disqus, duoshuo, gitment
+comments_provider: gitment
 # !!!重要!!! 请修改下面两个用户名为你自己申请的
 # !!!Important!!! Please modify usernames below to yours
 # duoshuo_username: DouKing
-disqus_username: Douking
+# disqus_username: Douking
 # 在使用 disqus 的时候可点击显示多说评论框
-lazy_load_duoshuo: true
+# lazy_load_duoshuo: true
+# gitment评论
+gitment_owner: DouKing
+gitment_repo: airplane
+gitment_client_id: ec293b9bf0ed2c6e3c07
+gitment_secret: dde919bd7c6b705d537cc82ab092b7a80c81edd6
 
 # ---------------- #
 #    Analytics     #
