@@ -1,7 +1,7 @@
 ---
 layout: post
-title: iOS 开发 —— 为自己的项目添加 cocoapods 支持
-description: iOS 开发 —— 为自己的项目添加 cocoapods 支持
+title: 为自己的项目添加 cocoapods 支持
+description: 为自己的项目添加 cocoapods 支持
 categories: 学习总结
 keywords: git, cocoapods, podspec
 ---
