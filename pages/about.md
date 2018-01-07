@@ -12,23 +12,18 @@ permalink: /about/
 
 追求「简洁而优雅的哲学」。
 
-## 联系
+<!-- ## Skill Keywords -->
 
-* GitHub：[https://github.com/douking]()
-* 博客：[{{ site.title }}]({{ site.url }})
-
-## Skill Keywords
-
-#### Software Engineer Keywords
-<div class="btn-inline">
+<!-- #### Software Engineer Keywords -->
+<!-- <div class="btn-inline">
     {% for keyword in site.skill_software_keywords %}
     <button class="btn btn-outline" type="button">{{ keyword }}</button>
     {% endfor %}
-</div>
+</div> -->
 
-#### Mobile Developer Keywords
-<div class="btn-inline">
+<!-- #### Mobile Developer Keywords -->
+<!-- <div class="btn-inline">
     {% for keyword in site.skill_mobile_app_keywords %}
     <button class="btn btn-outline" type="button">{{ keyword }}</button>
     {% endfor %}
-</div>
+</div> -->
