@@ -60,7 +60,7 @@
     font-size: 0.75em;
   }
   .site-header {
-    padding-bottom: 0;
+    padding-bottom: 5px;
     padding-top: 5px;
   }
   .site-header h1, .site-header h1 .octicon {

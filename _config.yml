@@ -4,10 +4,7 @@
 baseurl:
 url: http://douking.github.io
 date_format: "ordinal"
-title: 醉江月
-subtitle: "努力学习，努力工作中"
-description: "义开的个人博客"
-keywords: 醉江月, 义开, wyk, douking
+title: DouKing's blog
 favicon: /favicon.ico
 timezone: Asia/Beijing
 encoding: "utf-8"
@@ -17,10 +14,7 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: DouKing
-organization: Secoo, Inc.
-organization_url: http://www.secoo.com
-location: Beijing, China
-email: wyk8916@gmail.com
+
 
 # ---------------- #
 #    Navigation    #
@@ -33,14 +27,6 @@ navs:
   -
     href: /categories/
     label: 分类
-
-  -
-    href: /links/
-    label: 链接
-
-  # -
-  #   href: /about/
-  #   label: 关于
 
 # ---------------- #
 #       RSS        #
@@ -106,8 +92,8 @@ gitment_secret: dde919bd7c6b705d537cc82ab092b7a80c81edd6
 # ---------------- #
 #    Analytics     #
 # ---------------- #
-google:
-    analytics_id: UA-80669434-1
+# google:
+#     analytics_id: 
 
 # ---------------- #
 #      Datas       #
