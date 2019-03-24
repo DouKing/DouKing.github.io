@@ -2,8 +2,8 @@
 layout: post
 title: Swift算法实战——二叉树路径
 description: Swift算法实战——二叉树路径
-categories: 学习总结
-keywords: study
+categories: 数据结构与算法
+keywords: algorithm
 ---
 
 
