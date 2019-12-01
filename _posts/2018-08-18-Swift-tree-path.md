@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Swift算法实战——二叉树路径
-description: Swift算法实战——二叉树路径
+title: Swift 算法实战 — 二叉树路径
+description: Swift 算法实战 — 二叉树路径
 categories: 数据结构与算法
-keywords: algorithm
+keywords: algorithm,算法,swift,二叉树
 ---
 
 
@@ -32,7 +32,7 @@ keywords: algorithm
 
 咋一看，这与先序遍历有些像，那么我们可以参考先序遍历的算法。另外，由于要打印路径，所以需要用一个`栈`来保存路径。
 
-```
+```swift
 
 // 定义二叉树节点
 indirect enum BinaryTree<T: Comparable> {
@@ -55,15 +55,16 @@ func path(root: BinaryTree<Int>) {
 
 ```
 
-> 这里我用枚举定义了一个二叉树节点。在打印路径的算法中，
-  1.首先让根节点入栈，
-  2.递归打印左右子树路径，
-  3.打印完左右子树路径便让栈顶元素出栈，
-  4.如果入栈的节点是叶子节点，便打印栈（这就是一条路径）。
+这里我用枚举定义了一个二叉树节点。在打印路径的算法中，
+
+- 1.首先让根节点入栈，
+- 2.递归打印左右子树路径，
+- 3.打印完左右子树路径便让栈顶元素出栈，
+- 4.如果入栈的节点是叶子节点，便打印栈（这就是一条路径）。
 
 ##### 测试
 
-```
+```swift
 
 let tree: BinaryTree<Int> = .node(
     .node(.node(.node(.empty,
@@ -76,9 +77,10 @@ let tree: BinaryTree<Int> = .node(
         4,
         .empty),
     5,
-    .node(.node(.empty,
-                13,
-                .empty),
+    .node(
+        .node(.empty,
+              13,
+              .empty),
         8,
         .node(.empty,
               4,

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Swift算法实战——链表
-description: Swift算法实战——链表
+title: Swift 算法实战 — 链表
+description: Swift 算法实战 — 链表
 categories: 数据结构与算法
-keywords: algorithm
+keywords: algorithm,算法,swift,链表
 ---
 
 ## 前言
@@ -19,8 +19,7 @@ keywords: algorithm
 
 - 链表节点
 
-```Swift
-
+```swift
 class ListNode {
   var value: Int
   var next: ListNode?
@@ -28,12 +27,11 @@ class ListNode {
     self.value = value
   }
 }
-
 ```
 
 - 有了节点，就可以创建链表了
 
-```Swift
+```swift
 //创建链表，返回头节点
 func createList(_ values: [Int]) -> ListNode? {
   var head: ListNode? = nil
@@ -49,13 +47,11 @@ func createList(_ values: [Int]) -> ListNode? {
   }
   return head
 }
-
 ```
 
 - 查询节点
 
-```Swift
-
+```swift
 //根据下标查询节点
 func getNode(from head: ListNode, at index: Int) -> ListNode? {
   var i = 0
@@ -69,13 +65,11 @@ func getNode(from head: ListNode, at index: Int) -> ListNode? {
   }
   return node
 }
-
 ```
 
 - 插入节点
 
-```
-
+```swift
 //插入节点
 func insert(node: ListNode?, to head: ListNode, at index: Int) -> ListNode? {
   guard let node = node else { return head }
@@ -89,13 +83,11 @@ func insert(node: ListNode?, to head: ListNode, at index: Int) -> ListNode? {
   }
   return head
 }
-
 ```
 
 - 删除节点
 
-```
-
+```swift
 //删除节点
 func deleteNode(from head: ListNode, at index: Int) -> ListNode? {
   guard index > 0 else {
@@ -110,25 +102,21 @@ func deleteNode(from head: ListNode, at index: Int) -> ListNode? {
   }
   return head
 }
-
 ```
 
 - 修改节点
 
-```
-
+```swift
 //修改节点
 func updateNode(_ head: ListNode, at index: Int, use value: Int) -> ListNode {
   getNode(from: head, at: index)?.value = value
   return head
 }
-
 ```
 
 #### 我们来做开头那道题
 
-```
-
+```swift
 func modify() {
   let array = [2, 3, 5, 8, 9, 10, 18, 26, 32]
   let value = 6
@@ -147,11 +135,10 @@ func modify() {
 modify()
 
 // [2, 3, 5, 6, 8, 9, 10, 18, 26, 32]
-
 ```
 
 
-[Demo](https://github.com/DouKing/Structure.playground)
+附上 [Demo](https://github.com/DouKing/Structure.playground)
 
 
 
