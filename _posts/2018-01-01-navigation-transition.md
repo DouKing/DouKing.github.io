@@ -33,7 +33,7 @@ keywords: study
 
 2.不同的页面如何显示不一样的导航条。这一点我们可以参考系统的做法。不同的页面虽然共用一个导航条，但是却有不同的 navigation item，navigation item 里封装了该页面要展示到导航条上的内容和视图。
 
-```
+```objc
 @interface UINavigationItem : NSObject <NSCoding>
 
 @property(nullable, nonatomic,copy)   NSString        *title;
@@ -46,7 +46,7 @@ keywords: study
 
 我们可以仿照系统的方法，给 navigation item 添加一个 view，用来显示不同的颜色、添加自定义内容。
 
-```
+```objc
 @interface UINavigationItem (STMTransition)
 
 @property (nonatomic, strong) UIView *stm_barTintView;
@@ -65,7 +65,7 @@ keywords: study
 
 苹果提供的转场动画方式都是通过协议提供的。要实现导航控制器的转场，第一步就是遵守 `UINavigationControllerDelegate` 这个协议。其中跟转场相关的有两个：
 
-```
+```objc
 - (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                           interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController NS_AVAILABLE_IOS(7_0);
 
@@ -79,7 +79,7 @@ keywords: study
 
 `UIViewControllerAnimatedTransitioning` 协议主要的方法有两个：
 
-```
+```objc
 - (NSTimeInterval)transitionDuration:(nullable id <UIViewControllerContextTransitioning>)transitionContext;
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext;
 ```
@@ -92,7 +92,7 @@ keywords: study
 
 hook 住 navigation controller 的 `delegate`，在 navigation controller 和它真实的 delegate 之间添加一个代理类 `STMTransitionProxy`，专门用来实现转场代理。
 
-```
+```objc
 - (void)stm_setDelegate:(id<UINavigationControllerDelegate>)delegate {
   self.proxy.delegate = delegate;
   [self stm_setDelegate:self.proxy];

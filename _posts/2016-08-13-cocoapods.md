@@ -15,13 +15,15 @@ keywords: git, cocoapods, podspec
 
 切换到项目根目录，运行下面的命令
 
-> pod spec create [Sample]
+```
+pod spec create [Sample]
+```
 
 这时会在项目根目录生成 `Sample.podspec` 文件
 
 编辑 `Sample.podspec`
 
-```
+```ruby
 
 Pod::Spec.new do |s|
 
@@ -44,27 +46,36 @@ end
 
 验证 podspec 文件，运行下面的命令
 
-> pod lib lint
+```
+pod lib lint
+```
 
 如果不想要警告：
 
-> pod lib lint --allow-warnings
+```
+pod lib lint --allow-warnings
+```
 
 如果想让错误信息更丰富：
 
-> pod lib lint --verbose
+```
+pod lib lint --verbose
+```
 
 #### 3.打tag上传
 
 验证通过后，为项目打上tag，并推到远端
 
-> git tag xxx
-
-> git push --tags
+```
+git tag xxx
+git push --tags
+```
 
 使用 `trunk` 命令，把 podspec 文件推送到 CocoaPod 官方库
 
-> pod trunk push [Sample.podspec]
+```
+pod trunk push [Sample.podspec]
+```
 
 #### 4.使用
 
@@ -81,12 +92,18 @@ end
 
 1.Cocoapods 仓库列表
 
-> pod repo list
+```
+pod repo list
+```
 
 2.将 git 地址添加到 Cocoapods 仓库
 
-> pod repo add specs [url]
+```
+pod repo add specs [url]
+```
 
 3.将 podspec 文件上传到 Cocoapods 仓库
 
-> pod repo push [仓库名] [xxx.podspec] --allow-warnings --use-libraries [--sources=https://xxxxxxxx]
+```
+pod repo push [仓库名] [xxx.podspec] --allow-warnings --use-libraries [--sources=https://xxxxxxxx]
+```
