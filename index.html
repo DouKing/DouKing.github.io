@@ -48,3 +48,18 @@ comments: false
         </div>
     </div>
 </section>
+
+<script>
+    //获取所有的li标签
+    var list = document.getElementsByClassName("repo-list-item");
+    for (var i = 0; i < list.length; i++) {
+        //为li注册鼠标进入事件
+        list[i].onmouseover = function () {
+            this.style.backgroundColor = "#f5f5f5";
+        };
+        //为li注册鼠标离开事件
+        list[i].onmouseout = function () {
+            this.style.backgroundColor = "";
+        };
+    }
+</script>
