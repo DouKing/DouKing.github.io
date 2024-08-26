@@ -4,7 +4,7 @@
 baseurl:
 url: http://douking.github.io
 date_format: "ordinal"
-title: DouKing's blog
+title: 一江春水的博客
 favicon: /favicon.ico
 timezone: Asia/Beijing
 encoding: "utf-8"
@@ -13,7 +13,7 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: DouKing
+author: 一江春水
 
 
 # ---------------- #
